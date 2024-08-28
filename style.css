@@ -1,0 +1,156 @@
+
+
+body
+{
+    background-image: url(https://w0.peakpx.com/wallpaper/242/447/HD-wallpaper-white-square-texture-background-effect-elegant-gradient-luxury-tile.jpg);
+    background-size:1300px  1300px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 
+{  
+     font-family: Lucida Calligraphy; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: -1px;
+     margin-bottom: -30px;
+     text-decoration: underline;
+     text-underline-offset: 10px;
+     text-decoration-thickness: 3px;
+     text-shadow: 0 0 10px rgb(79, 76, 76);
+}
+
+.container
+{
+   background-color:rgb(255, 255, 255);
+   height: 500px;
+   width:  350px;
+   border: 2px solid rgb(212, 207, 207);
+   display: grid;
+   margin:0 auto;
+   margin-top: 50px;
+   grid-template-rows: repeat(6,1fr);/*1fr -> one fraction of the entire width available*/
+   grid-template-columns: repeat(4,1fr);
+   row-gap: 3px;
+   column-gap: 3px;
+   border-radius: 7%;
+   box-shadow: 5px 5px 10px rgb(126, 124, 124) ;
+}
+
+button.item
+{
+    border-radius: 90px;
+    padding: 0 auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 5px;
+    border:none;
+    appearance: none;
+    cursor: pointer;
+}
+
+#item21 {
+    background-color: rgb(117, 231, 3);
+}
+
+#item21:hover p {
+    background-color: white;
+    color: black; 
+}
+.screen
+{
+    border-radius: 30px;
+    margin-top: 10px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: 73%;
+    height: 63px;
+    margin-left: 20px;
+    background-color: rgb(54, 140, 239);
+    box-shadow: 2px 2px 5px rgb(126, 124, 124) ;
+    color: white;
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#item2, #item3, #item4 ,#item5, #item6, #item7, 
+#item8, #item9, #item10,#item11, #item12, #item13,
+#item14, #item15, #item16,#item17, #item18, #item19,
+#item20, #item21    
+{ 
+    box-shadow: 2px 2px 15px rgb(126, 124, 124) ;
+    margin-left: 12px;
+    width: 65px;
+    height: 63px ;
+    border-radius: 50%;
+   &:hover
+   {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+   }
+}
+
+#item2, #item3, #item4
+{
+    background-color:rgb(229, 245, 245)
+}
+
+#item6, #item7, #item8, #item10,#item11, #item12,#item14, 
+#item15, #item16, #item18, #item19
+{
+   background-color: rgb(203, 215, 221);
+}
+
+#item17
+{
+    background-color:rgb(232, 232, 7);
+}
+
+#item13
+{
+    background-color: rgb(54, 140, 239);;
+}
+
+#item9
+{
+    background-color:rgb(238, 53, 90)
+}
+
+#item5
+{
+    background-color: darkblue;
+}
+
+#item20
+{
+    background-color:rgb(229, 245, 245)
+}
+
+#item2, #item3, #item4 , #item6, #item7, 
+#item8, #item10,#item11, #item12,
+#item14, #item15, #item16, #item18, #item19,
+#item20 p
+{
+  text-align: center;
+  font-size: 25px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(113, 112, 112);
+  line-height: 9px;
+}
+
+#item5 ,#item9,#item13,#item17,#item21 p
+{
+    text-align: center;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 9px;
+}
