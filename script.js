@@ -36,9 +36,7 @@ function selectOperation(op) {
     previousNumber = currentNumber;
     currentNumber = '';
     operation = op;
-    console.log('Selected operation:', op); // Debug line
-
-    // Update the display to show the full expression
+    
     updateDisplay(previousNumber + ' ' + operation);
 }
 
@@ -73,10 +71,10 @@ function calculate() {
             return; // Handle invalid operations
     }
 
-    currentNumber = result.toString(); // Convert result back to string
+    currentNumber = result.toString(); 
     previousNumber = '';
     operation = null;
-    updateDisplay(currentNumber); // Show the result on the screen
+    updateDisplay(currentNumber); 
 }
 
 function calculateSquareRoot() {
@@ -95,7 +93,6 @@ const buttons = document.querySelectorAll('.item');
 buttons.forEach(button => {
     button.addEventListener('click', () => {
         const buttonValue = button.textContent.trim();
-        console.log('Button clicked:', buttonValue); // Debug line
         if (!isNaN(buttonValue) || buttonValue === '.') {
             appendNumber(buttonValue);
         } else if (buttonValue === '+') {
